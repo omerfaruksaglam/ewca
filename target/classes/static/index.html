@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Chat Application</title>
+</head>
+<body>
+<img src="img/baskent.jpg" height="300">
+<h2>Uçtan Uca Şifreli Mesajlaşma</h2>
+
+<div class="user-form" id="username-page">
+    <h2>Sisteme Giriş</h2>
+
+    <form id="usernameForm">
+        <label for="nickname">Kullanıcı adınız :</label>
+        <input type="text" id="nickname" name="nickname" required>
+
+        <label for="fullname">Adınız :</label>
+        <input type="text" id="fullname" name="realname" required>
+
+        <button type="submit">Giriş yap</button>
+    </form>
+</div>
+
+<div class="chat-container hidden" id="chat-page">
+    <div class="users-list">
+        <div class="users-list-container">
+            <h2>Çevrimiçi Kullanıcılar</h2>
+            <ul id="connectedUsers">
+            </ul>
+        </div>
+        <div>
+            <p id="connected-user-fullname"></p>
+            <a class="logout" href="javascript:void(0)" id="logout">Çıkış yap</a>
+        </div>
+    </div>
+
+    <div class="chat-area">
+        <div class="chat-area" id="chat-messages">
+        </div>
+
+        <form id="messageForm" name="messageForm" class="hidden">
+            <div class="message-input">
+                <input autocomplete="off" type="text" id="message" placeholder="Mesajınızı yazın ... ">
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

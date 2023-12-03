@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.websocket.Ewca.EwcaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.715 s - in com.websocket.Ewca.EwcaApplicationTests
